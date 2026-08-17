@@ -1,0 +1,19 @@
+# === 编译产物 (Dev-C++ / GCC / 51 Keil) ===
+*.exe
+*.o
+*.obj
+*.layout
+Makefile.win
+
+# === 快捷方式 / 系统垃圾 ===
+*.lnk
+Thumbs.db
+desktop.ini
+
+# === Office 临时文件 (Word 自动生成的 ~$xxx.docx) ===
+~$*
+
+# === 图片截图 (非源码，体积大且无版本意义) ===
+*.png
+*.jpg
+*.jpeg
