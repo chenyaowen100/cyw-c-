@@ -1,14 +1,14 @@
-#include "stdio.h"
-int main()
-{int hour1,minute1;
-int hour2,minute2;
-printf("ÇëÊäÈët1ÊÇ¶àÉÙĞ¡Ê±¶àÉÙ·ÖÖÓ"); 
-scanf("%d%d",&hour1,&minute1);
-printf("ÇëÊäÈët2ÊÇ¶àÉÙĞ¡Ê±¶àÉÙ·ÖÖÓ");
-scanf("%d%d",&hour2,&minute2);
-int t1=hour1*60+minute1;
-int t2=hour2*60+minute2;
-int t =t2-t1 ;
-printf("Ê±¼ä²îÊÇ%dĞ¡Ê±%d·Ö¡£",t/60,t%60);
-return 0;
-} 
+#include "stdio.h"
+int main()
+{int hour1,minute1;
+int hour2,minute2;
+printf("è¯·è¾“å…¥t1æ˜¯å¤šå°‘å°æ—¶å¤šå°‘åˆ†é’Ÿ"); 
+scanf("%d%d",&hour1,&minute1);
+printf("è¯·è¾“å…¥t2æ˜¯å¤šå°‘å°æ—¶å¤šå°‘åˆ†é’Ÿ");
+scanf("%d%d",&hour2,&minute2);
+int t1=hour1*60+minute1;
+int t2=hour2*60+minute2;
+int t =t2-t1 ;
+printf("æ—¶é—´å·®æ˜¯%då°æ—¶%dåˆ†ã€‚",t/60,t%60);
+return 0;
+} 

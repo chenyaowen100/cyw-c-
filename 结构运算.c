@@ -1,24 +1,24 @@
-#include"stdio.h"
-struct date{
-	int month;
-	int day;
-	int year;
-};
-
-int main()
-{
-	struct date today={07,31,2014};//Ç°ÃæÒÑ¾­ÓĞÀàĞÍÁË£¬¾Í²»ĞèÒªÇ¿ÖÆ×ª»» 
-today=(struct date){07,31,2014};//Ç¿ÖÆÀàĞÍ×ª»»£¬ÕâÑù¸øtoday±äÁ¿³õÊ¼»¯
-struct date thismonth={.month=7,.year=2014};//»òÕß¿ÉÒÔÕâÑù³õÊ¼»¯£¨¼ÇµÃÒªÓĞµã£© 
-	                                     //Ã»±»¸³ÖµµÄÁ¿¾ÍÊÇÁã 
-	struct date day;
-	day=today; //°ÑtodayµÄÄêÔÂÈÕÈı¸öÖµ¸³¸øday 
-	printf("½ñÌìÊÇ%i-%i-%i\n",day.year,day.month,day.day);
-//printfÕâÀï£¬.µÄ×ó±ßÊÇ½á¹¹±äÁ¿£¬ÓÒ±ßÊÇ±»ÉùÃ÷µÄ³ÉÔ±±äÁ¿Ãû£¨Ïàµ±ÓÚ3-5ĞĞµÄyear£¬month£¬day£© 
-	printf("½ñÌìÊÇ%i-%i-%i\n",today.year,today.month,today.day);
-	//ÕâÊ±todayºÍdayµÄÖµÍêÈ«Ò»Ñù
-	day.year=2015; //Õâ¾ÍÄÜ°Ñyear¸³¸øday±äÁ¿ 
-	printf("½ñÌìÊÇ%i-%i-%i\n",day.year,day.month,day.day);
-	
-	return 0;
-}
+#include"stdio.h"
+struct date{
+	int month;
+	int day;
+	int year;
+};
+
+int main()
+{
+	struct date today={07,31,2014};//å‰é¢å·²ç»æœ‰ç±»å‹äº†ï¼Œå°±ä¸éœ€è¦å¼ºåˆ¶è½¬æ¢ 
+today=(struct date){07,31,2014};//å¼ºåˆ¶ç±»å‹è½¬æ¢ï¼Œè¿™æ ·ç»™todayå˜é‡åˆå§‹åŒ–
+struct date thismonth={.month=7,.year=2014};//æˆ–è€…å¯ä»¥è¿™æ ·åˆå§‹åŒ–ï¼ˆè®°å¾—è¦æœ‰ç‚¹ï¼‰ 
+	                                     //æ²¡è¢«èµ‹å€¼çš„é‡å°±æ˜¯é›¶ 
+	struct date day;
+	day=today; //æŠŠtodayçš„å¹´æœˆæ—¥ä¸‰ä¸ªå€¼èµ‹ç»™day 
+	printf("ä»Šå¤©æ˜¯%i-%i-%i\n",day.year,day.month,day.day);
+//printfè¿™é‡Œï¼Œ.çš„å·¦è¾¹æ˜¯ç»“æ„å˜é‡ï¼Œå³è¾¹æ˜¯è¢«å£°æ˜çš„æˆå‘˜å˜é‡åï¼ˆç›¸å½“äº3-5è¡Œçš„yearï¼Œmonthï¼Œdayï¼‰ 
+	printf("ä»Šå¤©æ˜¯%i-%i-%i\n",today.year,today.month,today.day);
+	//è¿™æ—¶todayå’Œdayçš„å€¼å®Œå…¨ä¸€æ ·
+	day.year=2015; //è¿™å°±èƒ½æŠŠyearèµ‹ç»™dayå˜é‡ 
+	printf("ä»Šå¤©æ˜¯%i-%i-%i\n",day.year,day.month,day.day);
+	
+	return 0;
+}

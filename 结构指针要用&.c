@@ -1,17 +1,17 @@
-#include"stdio.h"
-struct date{
-	int month;
-	int day;
-	int year;
-};
-
-int main()
-{
-	struct date today;
-	today=(struct date){07,31,2014};
-	struct date day;
-	struct date*pDate=&today;
-	printf("½ñÌìÊÇ%i-%i-%i\n",today.year,today.month,today.day);
-	printf("todayµÄµØÖ·ÊÇ%p",pDate);
-	return 0;
-}
+#include"stdio.h"
+struct date{
+	int month;
+	int day;
+	int year;
+};
+
+int main()
+{
+	struct date today;
+	today=(struct date){07,31,2014};
+	struct date day;
+	struct date*pDate=&today;
+	printf("ä»Šå¤©æ˜¯%i-%i-%i\n",today.year,today.month,today.day);
+	printf("todayçš„åœ°å€æ˜¯%p",pDate);
+	return 0;
+}

@@ -1,18 +1,18 @@
-#include "stdio.h" 
-/*¿ÉÒÔÏÈĞ´mainº¯ÊıÔÙĞ´sumµÄº¯ÊıÌå
-£¬µ«ÊÇÒ»¶¨ÒªÏÈ°ÑsumµÄº¯ÊıÍ·ÏÈĞ´µ½
-mainº¯ÊıµÄÇ°Ãæ£¬²¢ÇÒ¼Ç×¡Õâ¸öº¯ÊıÍ·ºóÃæÒª¸ú·ÖºÅ*/
- void sum(int begin,int end) ; 
-int main()
-{sum(1,10);  
-sum(20,30);
-sum(35,45);
-return 0;
- } 
- void sum(int begin,int end) 
-{int i;                     
-int total=0;                  
-for(i=begin;i<=end;i++)
-{total+=i;}
-printf("%dµ½%dµÄºÍÊÇ%d\n",begin,end,total);
-}
+#include "stdio.h" 
+/*å¯ä»¥å…ˆå†™mainå‡½æ•°å†å†™sumçš„å‡½æ•°ä½“
+ï¼Œä½†æ˜¯ä¸€å®šè¦å…ˆæŠŠsumçš„å‡½æ•°å¤´å…ˆå†™åˆ°
+mainå‡½æ•°çš„å‰é¢ï¼Œå¹¶ä¸”è®°ä½è¿™ä¸ªå‡½æ•°å¤´åé¢è¦è·Ÿåˆ†å·*/
+ void sum(int begin,int end) ; 
+int main()
+{sum(1,10);  
+sum(20,30);
+sum(35,45);
+return 0;
+ } 
+ void sum(int begin,int end) 
+{int i;                     
+int total=0;                  
+for(i=begin;i<=end;i++)
+{total+=i;}
+printf("%dåˆ°%dçš„å’Œæ˜¯%d\n",begin,end,total);
+}

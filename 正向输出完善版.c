@@ -1,28 +1,28 @@
-#include "stdio.h"
-int main()
-{int y;
-int n=0;
-printf("ÇëÊäÈëÊı×Ö£¬ÎÒÀ´°ïÄúÅĞ¶ÏÕâ¸öÊı×ÖÓĞ¶àÉÙÎ»"); 
-scanf("%d",&y);
-int x=y;
-n=n+1;
-y=y/10; 
-while(y>0)
-{n=n+1;
-y=y/10;
-}
-printf("Õâ¸öÊı×ÖµÄÎ»ÊıÊÇ%d\n",n);
-int mask=1;
-int m=0;
-while(m<n-1){
-	mask=mask*10;
-	m++;}	printf("maskÊÇ%d\n",mask);
-do{int d=x/mask;
-printf("%d",d);
-if (mask>=10){
-printf(" ");}
-x=x%mask;
-mask=mask/10;
-}while(mask>0);
-	return 0;
-}
+#include "stdio.h"
+int main()
+{int y;
+int n=0;
+printf("è¯·è¾“å…¥æ•°å­—ï¼Œæˆ‘æ¥å¸®æ‚¨åˆ¤æ–­è¿™ä¸ªæ•°å­—æœ‰å¤šå°‘ä½"); 
+scanf("%d",&y);
+int x=y;
+n=n+1;
+y=y/10; 
+while(y>0)
+{n=n+1;
+y=y/10;
+}
+printf("è¿™ä¸ªæ•°å­—çš„ä½æ•°æ˜¯%d\n",n);
+int mask=1;
+int m=0;
+while(m<n-1){
+	mask=mask*10;
+	m++;}	printf("maskæ˜¯%d\n",mask);
+do{int d=x/mask;
+printf("%d",d);
+if (mask>=10){
+printf(" ");}
+x=x%mask;
+mask=mask/10;
+}while(mask>0);
+	return 0;
+}

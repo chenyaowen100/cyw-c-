@@ -1,18 +1,18 @@
-#include"stdio.h"
-enum color{red,yellow,green,numcolors };//²»Ö¸¶¨Ä¬ÈÏ´Ó0¿ªÊ¼ redÊÇ0 yellowÊÇ1 
-int main()//Ã¶¾ÙÕâÀïÒ²¿ÉÒÔÖ¸¶¨ÖµredºóÃæ¿ÉÒÔµÈÓÚÈÎÒâÊý£¬ÄÇyellow¾ÍÊÇred+1 
-{
-	int color=-1;
-	char*colornames[numcolors]={
-	"red","yellow","green"};
-char*colorname=NULL;
-printf("ÊäÈëÄãÏ²»¶µÄÑÕÉ«µÄ´úÂë");
-scanf("%d",&color);
-if(color>=0&&color<numcolors){
-	colorname=colornames[color];
-} else{colorname="unknown";
-}
-printf("ÄãÏ²»¶µÄÑÕÉ«ÊÇ%s",colorname);
- 
- return 0;
- } 
+#include"stdio.h"
+enum color{red,yellow,green,numcolors };//ä¸æŒ‡å®šé»˜è®¤ä»Ž0å¼€å§‹ redæ˜¯0 yellowæ˜¯1 
+int main()//æžšä¸¾è¿™é‡Œä¹Ÿå¯ä»¥æŒ‡å®šå€¼redåŽé¢å¯ä»¥ç­‰äºŽä»»æ„æ•°ï¼Œé‚£yellowå°±æ˜¯red+1 
+{
+	int color=-1;
+	char*colornames[numcolors]={
+	"red","yellow","green"};
+char*colorname=NULL;
+printf("è¾“å…¥ä½ å–œæ¬¢çš„é¢œè‰²çš„ä»£ç ");
+scanf("%d",&color);
+if(color>=0&&color<numcolors){
+	colorname=colornames[color];
+} else{colorname="unknown";
+}
+printf("ä½ å–œæ¬¢çš„é¢œè‰²æ˜¯%s",colorname);
+ 
+ return 0;
+ } 

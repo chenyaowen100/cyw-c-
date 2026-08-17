@@ -1,18 +1,18 @@
-#include"stdio.h"
-//Èç¹û³ı·¨³É¹¦·µ»Ø1£¬·ñÔò·µ»ØÁã£¬Í¨¹ıÖ¸Õë·µ»ØÉÌ 
-int divide(int a,int b,int *result);
-int main(void)
-{int a=5,b=2,c;
-if(divide(a,b,&c))
-	{printf("%d/%d=%d\n",a,b,c);}
-	return 0;
- } 
- 
-int divide(int a,int b,int *result){
-	int ret=1;
-	if(b==0) ret=0;
-	else{
-		*result=a/b;
-	}
-	return ret;
-}
+#include"stdio.h"
+//å¦‚æœé™¤æ³•æˆåŠŸè¿”å›1ï¼Œå¦åˆ™è¿”å›é›¶ï¼Œé€šè¿‡æŒ‡é’ˆè¿”å›å•† 
+int divide(int a,int b,int *result);
+int main(void)
+{int a=5,b=2,c;
+if(divide(a,b,&c))
+	{printf("%d/%d=%d\n",a,b,c);}
+	return 0;
+ } 
+ 
+int divide(int a,int b,int *result){
+	int ret=1;
+	if(b==0) ret=0;
+	else{
+		*result=a/b;
+	}
+	return ret;
+}

@@ -1,32 +1,32 @@
-#include"stdio.h"
-/*ÕÒ³ökeyÔÚÊı×éaÖĞµÄÎ»ÖÃ£¬keyÊÇÒªÑ°ÕÒµÄÊı×Ö£¬
-aÊÇÒªÑ°ÕÒµÄÊı×é£¬lengthÊÇÊı×éaµÄÔªËØÊıÁ¿£¬
-Èç¹ûÕÒµ½£¬Ôò·µ»ØÆäÔÚaÖĞµÄÎ»ÖÃ£»Èç¹ûÕÒ²»µ½Ôò·µ»Ø-1*/
-int search(int key,int a[],int length);
-int main()
-{int a[]={2,4,6,7,1,3,5,9,11,13,23,14,32};
-int x;
-int loc;
-printf("ÇëÊäÈëÒ»¸öÊı×Ö£»");
-scanf("%d",&x);
-loc=search(x,a,sizeof(a)/sizeof(a[0])) ;
-if(loc!=-1){
-printf("%dÔÚµÚ%d¸öÎ»ÖÃÉÏ\n",x,loc);
-}else{
-	printf("%d²»´æÔÚ",x);
-}
-return 0;} 
-
-int search(int key,int a[],int length){
-	int ret=-1;
-	int i;
-	for(i=0;i<length;i++){
-		if(a[i]==key){
-			ret=i;
-			break;
-		}
-	}
-return ret;
-}
-
-
+#include"stdio.h"
+/*æ‰¾å‡ºkeyåœ¨æ•°ç»„aä¸­çš„ä½ç½®ï¼Œkeyæ˜¯è¦å¯»æ‰¾çš„æ•°å­—ï¼Œ
+aæ˜¯è¦å¯»æ‰¾çš„æ•°ç»„ï¼Œlengthæ˜¯æ•°ç»„açš„å…ƒç´ æ•°é‡ï¼Œ
+å¦‚æœæ‰¾åˆ°ï¼Œåˆ™è¿”å›å…¶åœ¨aä¸­çš„ä½ç½®ï¼›å¦‚æœæ‰¾ä¸åˆ°åˆ™è¿”å›-1*/
+int search(int key,int a[],int length);
+int main()
+{int a[]={2,4,6,7,1,3,5,9,11,13,23,14,32};
+int x;
+int loc;
+printf("è¯·è¾“å…¥ä¸€ä¸ªæ•°å­—ï¼›");
+scanf("%d",&x);
+loc=search(x,a,sizeof(a)/sizeof(a[0])) ;
+if(loc!=-1){
+printf("%dåœ¨ç¬¬%dä¸ªä½ç½®ä¸Š\n",x,loc);
+}else{
+	printf("%dä¸å­˜åœ¨",x);
+}
+return 0;} 
+
+int search(int key,int a[],int length){
+	int ret=-1;
+	int i;
+	for(i=0;i<length;i++){
+		if(a[i]==key){
+			ret=i;
+			break;
+		}
+	}
+return ret;
+}
+
+

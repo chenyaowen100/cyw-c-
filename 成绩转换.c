@@ -1,20 +1,20 @@
-#include "stdio.h"
-int main()
-{printf("ÊäÈë³É¼¨");
-int grade; 
-scanf("%d",&grade); 
-grade=grade/10;
-switch(grade){
-case 10:
-case 9:
-printf("A");
-break;
-case 8:
-	printf("B");
-	break;
-	default:
-		printf("²»ºÏ¸ñ"); 
- 	
-} 
-return 0;
-} 
+#include "stdio.h"
+int main()
+{printf("è¾“å…¥æˆç»©");
+int grade; 
+scanf("%d",&grade); 
+grade=grade/10;
+switch(grade){
+case 10:
+case 9:
+printf("A");
+break;
+case 8:
+	printf("B");
+	break;
+	default:
+		printf("ä¸åˆæ ¼"); 
+ 	
+} 
+return 0;
+} 

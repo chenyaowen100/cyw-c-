@@ -1,9 +1,9 @@
-#include "stdio.h"
-int main()
-{int a;
-int b;
-printf("请输入两个整数：");
-scanf("%d%d",&a,&b);
-printf("%d+%d=%d",a,b,a+b) ;
-return 0 
- } 
+#include "stdio.h"
+int main()
+{int a;
+int b;
+printf("璇疯緭鍏ヤ袱涓暣鏁帮細");
+scanf("%d%d",&a,&b);
+printf("%d+%d=%d",a,b,a+b) ;
+return 0 
+ } 

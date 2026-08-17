@@ -1,8 +1,8 @@
-#include"stdio.h"
-int main()
-{int a,b;
-scanf("%d%d",&a,&b);
-double c=(a+b)/2.0;
-printf("%dºÍ%dµÄÆ½¾ùÖµ=%f\n",a,b,c);
-return 0;
-}
+#include"stdio.h"
+int main()
+{int a,b;
+scanf("%d%d",&a,&b);
+double c=(a+b)/2.0;
+printf("%då’Œ%dçš„å¹³å‡å€¼=%f\n",a,b,c);
+return 0;
+}

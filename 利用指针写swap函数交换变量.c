@@ -1,17 +1,17 @@
-#include"stdio.h"
-void swap(int *pa,int *pb);
-int main(void){
-	int a=5;
-	int b=6;
-	swap(&a,&b);
-	printf("a=%d,b=%d\n",a,b);
-	return 0;
-}
-
-void swap(int *pa,int *pb){
-	int t=*pa;
-	*pa=*pb;
-	*pb=t;
-}
-
-//Èç¹û´« ÈëÊÇswapµÄÊÇÊµ¼ÊµÄÖµ£¬ÊÇÎŞ·¨Íê³É±äÁ¿½»»»µÄ 
+#include"stdio.h"
+void swap(int *pa,int *pb);
+int main(void){
+	int a=5;
+	int b=6;
+	swap(&a,&b);
+	printf("a=%d,b=%d\n",a,b);
+	return 0;
+}
+
+void swap(int *pa,int *pb){
+	int t=*pa;
+	*pa=*pb;
+	*pb=t;
+}
+
+//å¦‚æœä¼  å…¥æ˜¯swapçš„æ˜¯å®é™…çš„å€¼ï¼Œæ˜¯æ— æ³•å®Œæˆå˜é‡äº¤æ¢çš„ 

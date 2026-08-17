@@ -1,31 +1,31 @@
-//Ë®ÏÉ»¨Êı£¬ÀıÈç153µÈÓÚÕâÈı¸öÊı×ÖµÄÈı´Î·½µÄºÍ
-#include"stdio.h"
-int main()
-{int n;
-scanf("%d",&n); //ÊäÈëË®ÏÉ»¨ÊıµÄÎ»Êı 
-int x=n; //xÊÇÎªÁËÇó³öÀ´mask 
-int y=n;
-int mask=1;
-int m=0; //mÊÇÎªÁËÇó³öÀ´mask 
-printf("Ë®ÏÉ»¨ÊıµÄÎ»ÊıÊÇ%d\n",n); 
-while(m<x-1){
-	mask=mask*10;
-	m++;}
-int z;int sum=0;int r; 
-int dmask=mask*10;
-while(mask<dmask){
-int mask1=mask;
-	while(mask1>0){
-		z=mask1%10;
-		int r=z;
-		int count=0;
-		while(count<n-1){z=z*r;
-		count++;
-		}
-		sum=sum+z;
-		mask1/=10;}
-	if(sum==mask){printf("%d\n",mask);}
-	sum=0;
-	mask++;
-}
-return 0;} 
+//æ°´ä»™èŠ±æ•°ï¼Œä¾‹å¦‚153ç­‰äºè¿™ä¸‰ä¸ªæ•°å­—çš„ä¸‰æ¬¡æ–¹çš„å’Œ
+#include"stdio.h"
+int main()
+{int n;
+scanf("%d",&n); //è¾“å…¥æ°´ä»™èŠ±æ•°çš„ä½æ•° 
+int x=n; //xæ˜¯ä¸ºäº†æ±‚å‡ºæ¥mask 
+int y=n;
+int mask=1;
+int m=0; //mæ˜¯ä¸ºäº†æ±‚å‡ºæ¥mask 
+printf("æ°´ä»™èŠ±æ•°çš„ä½æ•°æ˜¯%d\n",n); 
+while(m<x-1){
+	mask=mask*10;
+	m++;}
+int z;int sum=0;int r; 
+int dmask=mask*10;
+while(mask<dmask){
+int mask1=mask;
+	while(mask1>0){
+		z=mask1%10;
+		int r=z;
+		int count=0;
+		while(count<n-1){z=z*r;
+		count++;
+		}
+		sum=sum+z;
+		mask1/=10;}
+	if(sum==mask){printf("%d\n",mask);}
+	sum=0;
+	mask++;
+}
+return 0;} 

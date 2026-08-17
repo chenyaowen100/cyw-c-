@@ -1,10 +1,10 @@
-#include"stdio.h"
-int main(int argc,char const *argv[])
-{int ch;
-while((ch=getchar())!=EOF)//µ½ÕâµÄÊ±ºò³ÌĞò»áÍ£ÏÂÀ´µÈÄãÊäÈë 
-{putchar(ch);//»á°ÑÄãÊäÈëµÄ¶«Î÷Ô­·â²»¶¯µÄÊä³ö 
-}
-
-printf("EOF");
-return 0;
-}
+#include"stdio.h"
+int main(int argc,char const *argv[])
+{int ch;
+while((ch=getchar())!=EOF)//åˆ°è¿™çš„æ—¶å€™ç¨‹åºä¼šåœä¸‹æ¥ç­‰ä½ è¾“å…¥ 
+{putchar(ch);//ä¼šæŠŠä½ è¾“å…¥çš„ä¸œè¥¿åŸå°ä¸åŠ¨çš„è¾“å‡º 
+}
+
+printf("EOF");
+return 0;
+}

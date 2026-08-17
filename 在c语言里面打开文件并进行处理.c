@@ -1,15 +1,15 @@
-#include <stdio.h>
-int main(int argc, char const *argv[])
-{
-    FILE *fp = fopen("C:/Users/cheny/Desktop/cywµÄcÓïÑÔ±à³ÌÑ§Ï°¾­Àú/%nµÄÊ¹ÓÃ.c", "r");
-    if ( fp ) {
-        int num;
-        fscanf(fp, "%d", &num);//ÕâÑù¾Í´ÓÁíÍâÒ»¸öÎÄ¼ş¶Áµ½ÁËnumµÄÖµ 
-        printf("%d", num);
-        fclose(fp);//¹Ø±Õ¸Õ²Å´ò¿ªµÄÎÄ¼ş 
-    } else {
-        printf("ÎŞ·¨´ò¿ªÎÄ¼ş");
-    }
-    return 0;
-}
-
+#include <stdio.h>
+int main(int argc, char const *argv[])
+{
+    FILE *fp = fopen("C:/Users/cheny/Desktop/cywçš„cè¯­è¨€ç¼–ç¨‹å­¦ä¹ ç»å†/%nçš„ä½¿ç”¨.c", "r");
+    if ( fp ) {
+        int num;
+        fscanf(fp, "%d", &num);//è¿™æ ·å°±ä»å¦å¤–ä¸€ä¸ªæ–‡ä»¶è¯»åˆ°äº†numçš„å€¼ 
+        printf("%d", num);
+        fclose(fp);//å…³é—­åˆšæ‰æ‰“å¼€çš„æ–‡ä»¶ 
+    } else {
+        printf("æ— æ³•æ‰“å¼€æ–‡ä»¶");
+    }
+    return 0;
+}
+

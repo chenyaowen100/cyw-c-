@@ -1,9 +1,9 @@
-#include"stdio.h"
-int main()
-{int foot=0;
-int inch=0;
-printf("Çë·Ö±ðÊäÈëÉí¸ßµÄÓ¢³ßºÍÓ¢´ç£»");
-scanf("%d%d",&foot,&inch);
-printf("Éí¸ßÊÇ%fÃ×¡£",(foot+inch/12.0)*0.3048) ; 
-return 0;
-}
+#include"stdio.h"
+int main()
+{int foot=0;
+int inch=0;
+printf("è¯·åˆ†åˆ«è¾“å…¥èº«é«˜çš„è‹±å°ºå’Œè‹±å¯¸ï¼›");
+scanf("%d%d",&foot,&inch);
+printf("èº«é«˜æ˜¯%fç±³ã€‚",(foot+inch/12.0)*0.3048) ; 
+return 0;
+}

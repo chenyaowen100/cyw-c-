@@ -1,25 +1,25 @@
-#include"stdio.h"
-int main()
-{int x;
-double sum=0;
-int count=0;
-int number[100];//¶¨ÒåÊı×é £¨ÕâÊÇÒ»¸ö100¸öintµÄÊı×é£© 
-scanf("%d",&x);
-while(x!=-1)//Êı×éÊıÊı´ÓÁã¿ªÊ¼Êı 
-{number[count]=x;//¶ÔÊı×éÖĞµÄÔªËØ¸³Öµ(ÈÃnumberµ±ÖĞµÄ
-sum=sum+x;       // µÚcountÄÇ¸öÎ»ÖÃÉÏµÄÔªËØµÈÓÚÁËx £© 
-count=count+1;
-scanf("%d",&x);
-}
-if(count>0)
-{
-printf("%f\n",sum/count);
-int i;
-	for(i=0;i<count;i++){//Õû¸öforÑ­»·ÔÚ±éÀúÊı×é 
-	   if(number[i]>sum/count)//Ê¹ÓÃÊı×éÖĞµÄÔªËØ 
-	   {         //ÄÃnumberÖĞµÄµÚi¸öÔªËØÀ´×öÅĞ¶Ï 
-	   	printf("%d\n",number[i]);//
-	   }
-	}
-}
-return 0;}
+#include"stdio.h"
+int main()
+{int x;
+double sum=0;
+int count=0;
+int number[100];//å®šä¹‰æ•°ç»„ ï¼ˆè¿™æ˜¯ä¸€ä¸ª100ä¸ªintçš„æ•°ç»„ï¼‰ 
+scanf("%d",&x);
+while(x!=-1)//æ•°ç»„æ•°æ•°ä»é›¶å¼€å§‹æ•° 
+{number[count]=x;//å¯¹æ•°ç»„ä¸­çš„å…ƒç´ èµ‹å€¼(è®©numberå½“ä¸­çš„
+sum=sum+x;       // ç¬¬counté‚£ä¸ªä½ç½®ä¸Šçš„å…ƒç´ ç­‰äºäº†x ï¼‰ 
+count=count+1;
+scanf("%d",&x);
+}
+if(count>0)
+{
+printf("%f\n",sum/count);
+int i;
+	for(i=0;i<count;i++){//æ•´ä¸ªforå¾ªç¯åœ¨éå†æ•°ç»„ 
+	   if(number[i]>sum/count)//ä½¿ç”¨æ•°ç»„ä¸­çš„å…ƒç´  
+	   {         //æ‹¿numberä¸­çš„ç¬¬iä¸ªå…ƒç´ æ¥åšåˆ¤æ–­ 
+	   	printf("%d\n",number[i]);//
+	   }
+	}
+}
+return 0;}

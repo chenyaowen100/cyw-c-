@@ -1,32 +1,32 @@
-#include  "stdio.h"
-int main()//numberÊÇÒª²ÂµÄÊı×Ö£¬nÊÇÏŞ¶¨´ÎÊı 
-{int number,n,inp;//inpÊÇÓÃ»§ÊäÈëÓÃÀ´²ÂµÄÊı×Ö 
-int finished=0;//cntÊÇ¼ÆÊıÆ÷ 
-int cnt=0;
-scanf("%d %d",&number,&n);
-do{
-	scanf("%d",&inp);
-	cnt++;
-	if(inp<0){
-		printf("game over\n");
-	}else if(inp>number){
-		printf("too big\n");
-	}else if(inp<number){
-		printf("too small\n");
-	}else{
-		if(cnt==1){
-			printf("bingo\n");
-		}else if(cnt<=3){
-			printf("lucky guess\n");
-		}else {
-		printf("good guess\n");
-		}finished=1;
-	}
-	if(cnt==n){
-		if(!finished){
-			printf("game over\n");
-			finished=1;
-		}
-	}
-} while(!finished); 
-return 0;}
+#include  "stdio.h"
+int main()//numberæ˜¯è¦çŒœçš„æ•°å­—ï¼Œnæ˜¯é™å®šæ¬¡æ•° 
+{int number,n,inp;//inpæ˜¯ç”¨æˆ·è¾“å…¥ç”¨æ¥çŒœçš„æ•°å­— 
+int finished=0;//cntæ˜¯è®¡æ•°å™¨ 
+int cnt=0;
+scanf("%d %d",&number,&n);
+do{
+	scanf("%d",&inp);
+	cnt++;
+	if(inp<0){
+		printf("game over\n");
+	}else if(inp>number){
+		printf("too big\n");
+	}else if(inp<number){
+		printf("too small\n");
+	}else{
+		if(cnt==1){
+			printf("bingo\n");
+		}else if(cnt<=3){
+			printf("lucky guess\n");
+		}else {
+		printf("good guess\n");
+		}finished=1;
+	}
+	if(cnt==n){
+		if(!finished){
+			printf("game over\n");
+			finished=1;
+		}
+	}
+} while(!finished); 
+return 0;}

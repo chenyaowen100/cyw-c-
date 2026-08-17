@@ -1,15 +1,15 @@
-#include"stdio.h"
-enum color{red,yellow,green};//¶¨ÒåÁËÒ»¸öÃûÎªcolorµÄÃ¶¾ÙÀàĞÍ 
-
-void f(enum color c);
-
-int main()
-{enum color t=red;//¶¨ÒåÁËÒ»¸öÀàĞÍÊÇenum colorµÄ±äÁ¿t£¬ËüµÄÀàĞÍ±ØĞëÊÇcolorÃ¶¾ÙÀïµÄ¶«Î÷ 
-scanf("%d",&t);   
-f(t);
-return 0;
- } 
- void f(enum color c)
- {
- 	printf("%d",c);
- }
+#include"stdio.h"
+enum color{red,yellow,green};//å®šä¹‰äº†ä¸€ä¸ªåä¸ºcolorçš„æšä¸¾ç±»å‹ 
+
+void f(enum color c);
+
+int main()
+{enum color t=red;//å®šä¹‰äº†ä¸€ä¸ªç±»å‹æ˜¯enum colorçš„å˜é‡tï¼Œå®ƒçš„ç±»å‹å¿…é¡»æ˜¯coloræšä¸¾é‡Œçš„ä¸œè¥¿ 
+scanf("%d",&t);   
+f(t);
+return 0;
+ } 
+ void f(enum color c)
+ {
+ 	printf("%d",c);
+ }

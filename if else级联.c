@@ -1,11 +1,11 @@
-#include "stdio.h"
-int main()
-{int x=0;
-int f=0;
-printf("ÇëÊäÈëxµÄÖµ"); 
-scanf("%d",&x);
-if(x<0){f=-1;}
-else if(x==0){f=0;}
-else{f=2*x;}
-printf("fµÄÖµÊÇ%d",f);
-}
+#include "stdio.h"
+int main()
+{int x=0;
+int f=0;
+printf("è¯·è¾“å…¥xçš„å€¼"); 
+scanf("%d",&x);
+if(x<0){f=-1;}
+else if(x==0){f=0;}
+else{f=2*x;}
+printf("fçš„å€¼æ˜¯%d",f);
+}

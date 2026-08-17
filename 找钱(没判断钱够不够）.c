@@ -1,12 +1,12 @@
-#include "stdio.h"
-int main()
-{int amount =100;
-int price=0;
-printf("ÇëÊäÈë½ğ¶î£¨Ôª£©£º");
-scanf("%d",&price);
-printf("ÇëÊäÈëÆ±Ãæ £¨Ôª£©£º");
-scanf("%d",&amount); 
-int change=amount-price;
-printf("ÕÒÄú%dÔª¡£\n",change);
-return 0;
-}
+#include "stdio.h"
+int main()
+{int amount =100;
+int price=0;
+printf("è¯·è¾“å…¥é‡‘é¢ï¼ˆå…ƒï¼‰ï¼š");
+scanf("%d",&price);
+printf("è¯·è¾“å…¥ç¥¨é¢ ï¼ˆå…ƒï¼‰ï¼š");
+scanf("%d",&amount); 
+int change=amount-price;
+printf("æ‰¾æ‚¨%då…ƒã€‚\n",change);
+return 0;
+}

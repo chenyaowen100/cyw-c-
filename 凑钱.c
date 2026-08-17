@@ -1,17 +1,17 @@
-#include "stdio.h"
-int main()
-{int x,one,two,five;
-//xÊÇÒª´ÕµÄÇ®(Ôª£©1 2 5´ú±íÓ²±Ò¶àÉÙ½Ç 
-scanf("%d",&x);
-int exit=0;
-for(one=0;one<=x*10;one++)
-{for(two=0;two<=x*10/2;two++)
-{for(five=0;five<=x*10/5;five++)
-{if(one+two*2+five*5==x*10)
-{printf("¿ÉÒÔÓÃ%d¸ö1½Ç¼Ó%d¸ö2½Ç¼Ó%d¸öÎå½ÇµÃµ½%dÔª\n"
-,one,two,five,x);
-exit=1;
-break;}}
-if(exit==1)break;}
-if(exit==1)break;}
-}
+#include "stdio.h"
+int main()
+{int x,one,two,five;
+//xæ˜¯è¦å‡‘çš„é’±(å…ƒï¼‰1 2 5ä»£è¡¨ç¡¬å¸å¤šå°‘è§’ 
+scanf("%d",&x);
+int exit=0;
+for(one=0;one<=x*10;one++)
+{for(two=0;two<=x*10/2;two++)
+{for(five=0;five<=x*10/5;five++)
+{if(one+two*2+five*5==x*10)
+{printf("å¯ä»¥ç”¨%dä¸ª1è§’åŠ %dä¸ª2è§’åŠ %dä¸ªäº”è§’å¾—åˆ°%då…ƒ\n"
+,one,two,five,x);
+exit=1;
+break;}}
+if(exit==1)break;}
+if(exit==1)break;}
+}

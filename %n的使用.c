@@ -1,10 +1,10 @@
-#include <stdio.h>
-int main(int argc, char const *argv[])
-{
-    int num=0;
-    printf("%dty%n\n",12345, &num);
-    printf("%d", num);//°´ÀíËµÕâÀïÓ¦¸ÃÊä³ö7£¬ÒòÎªÔÚÔËĞĞµ½%nµÄÊ±ºòÒÑ¾­Êä³öÁËÆß¸ö×Ö·û  
-
-    return 0;
-}
-
+#include <stdio.h>
+int main(int argc, char const *argv[])
+{
+    int num=0;
+    printf("%dty%n\n",12345, &num);
+    printf("%d", num);//æŒ‰ç†è¯´è¿™é‡Œåº”è¯¥è¾“å‡º7ï¼Œå› ä¸ºåœ¨è¿è¡Œåˆ°%nçš„æ—¶å€™å·²ç»è¾“å‡ºäº†ä¸ƒä¸ªå­—ç¬¦  
+
+    return 0;
+}
+

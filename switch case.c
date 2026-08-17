@@ -1,16 +1,16 @@
-#include "stdio.h"
-int main()
-{int type=0;
-scanf("%d",&type);
-switch(type){
-	case 1:
-		printf("ÄãºÃ");
-		break;
-	case 2:
-	printf("ÔçÉÏºÃ");
-	break;
-	default:
-	printf("À²À²À²À²À²À²À²") ; 
-}
-return 0; 
-}
+#include "stdio.h"
+int main()
+{int type=0;
+scanf("%d",&type);
+switch(type){
+	case 1:
+		printf("ä½ å¥½");
+		break;
+	case 2:
+	printf("æ—©ä¸Šå¥½");
+	break;
+	default:
+	printf("å•¦å•¦å•¦å•¦å•¦å•¦å•¦") ; 
+}
+return 0; 
+}

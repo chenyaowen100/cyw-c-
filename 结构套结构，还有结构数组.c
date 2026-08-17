@@ -1,26 +1,26 @@
-#include"stdio.h"
-struct point{
-	int x;
-	int y;
-}; 
-struct rectangle{
-	struct point p1;
-	struct point p2;
-};
-void printrect(struct rectangle r)
-{
-	printf("<%d, %d> to <%d, %d>\n",r.p1.x,  r.p1.y,  r.p2.x,  r.p2.y);
-}
-int main(){
-	int i;
-	struct rectangle rects[2]={
-		{{1,2},{3,4}},//Ò»¸ö¾ØĞÎµÄp1ÊÇ£¨1£¬2£©£¬p2ÊÇ£¨3£¬4£© 
-		{{5,6},{7,8}}//ÁíÒ»¸ö¾ØĞÎµÄp1ÊÇ£¨5£¬6£©£¬p2ÊÇ£¨7£¬8£© 
-	};//2 rectangles
-	
-	for(i=0;i<2;i++){
-		printrect(rects[i]);
-	}
-	
-	return 0;
-}
+#include"stdio.h"
+struct point{
+	int x;
+	int y;
+}; 
+struct rectangle{
+	struct point p1;
+	struct point p2;
+};
+void printrect(struct rectangle r)
+{
+	printf("<%d, %d> to <%d, %d>\n",r.p1.x,  r.p1.y,  r.p2.x,  r.p2.y);
+}
+int main(){
+	int i;
+	struct rectangle rects[2]={
+		{{1,2},{3,4}},//ä¸€ä¸ªçŸ©å½¢çš„p1æ˜¯ï¼ˆ1ï¼Œ2ï¼‰ï¼Œp2æ˜¯ï¼ˆ3ï¼Œ4ï¼‰ 
+		{{5,6},{7,8}}//å¦ä¸€ä¸ªçŸ©å½¢çš„p1æ˜¯ï¼ˆ5ï¼Œ6ï¼‰ï¼Œp2æ˜¯ï¼ˆ7ï¼Œ8ï¼‰ 
+	};//2 rectangles
+	
+	for(i=0;i<2;i++){
+		printrect(rects[i]);
+	}
+	
+	return 0;
+}

@@ -1,30 +1,30 @@
-#include"stdio.h"
-int isprime(int x)//21ĞĞµÄiÏàµ±ÓÚÔÚÎÒ×Ô¼º¶¨ÒåµÄ isprime 
-{int ret=1;       //º¯ÊıÀïÃæ½øĞĞÁËxÕâÑùµÄÔËËã£¬µÃµ½ÁË 
-	int k;       //retµÄÊıÖµÎª1»ò0¡£ 
-	for(k=2;k<=x-1;k++){
-		if(x%k==0){
-			ret=0;
-			break;
-		}
-	}
-	return ret;//µÃµ½ÁËretµÄÖµºó£¬»áÊ¹µ÷ÓÃisprimeµÄµØ·½ 
-}              //Ïàµ±ÓÚ±ä³ÉretµÄÖµ£¬¾ÍÏñisprime£¨i£© 
-int main()     //Ïàµ±ÓÚ1»ò0 
-{int m,n;
-int sum=0;
-int cnt=0;
-int i;
-scanf("%d %d",&m,&n);
-if(m==1){m=2;}
-for(i=m;i<=n;i++){
-	if(isprime(i))//ifÀïÃæ·ÇÁã¼´Õæ£¬ÊÇÕæ¾ÍÖ´ĞĞ 
-	{
-	sum+=i; 
-	cnt++;}
-}
-printf("%d %d",cnt,sum);
-return 0;
-}
-//º¯ÊıµÄ·µ»ØÀàĞÍ²»Ò»¶¨ÊÇint£¬¿ÉÄÜÊÇdouble£¬ÓÃdouble¾ÍÒª
-//returnÒ»¸öÀàĞÍÎªdoubleµÄÖµ 
+#include"stdio.h"
+int isprime(int x)//21è¡Œçš„iç›¸å½“äºåœ¨æˆ‘è‡ªå·±å®šä¹‰çš„ isprime 
+{int ret=1;       //å‡½æ•°é‡Œé¢è¿›è¡Œäº†xè¿™æ ·çš„è¿ç®—ï¼Œå¾—åˆ°äº† 
+	int k;       //retçš„æ•°å€¼ä¸º1æˆ–0ã€‚ 
+	for(k=2;k<=x-1;k++){
+		if(x%k==0){
+			ret=0;
+			break;
+		}
+	}
+	return ret;//å¾—åˆ°äº†retçš„å€¼åï¼Œä¼šä½¿è°ƒç”¨isprimeçš„åœ°æ–¹ 
+}              //ç›¸å½“äºå˜æˆretçš„å€¼ï¼Œå°±åƒisprimeï¼ˆiï¼‰ 
+int main()     //ç›¸å½“äº1æˆ–0 
+{int m,n;
+int sum=0;
+int cnt=0;
+int i;
+scanf("%d %d",&m,&n);
+if(m==1){m=2;}
+for(i=m;i<=n;i++){
+	if(isprime(i))//ifé‡Œé¢éé›¶å³çœŸï¼Œæ˜¯çœŸå°±æ‰§è¡Œ 
+	{
+	sum+=i; 
+	cnt++;}
+}
+printf("%d %d",cnt,sum);
+return 0;
+}
+//å‡½æ•°çš„è¿”å›ç±»å‹ä¸ä¸€å®šæ˜¯intï¼Œå¯èƒ½æ˜¯doubleï¼Œç”¨doubleå°±è¦
+//returnä¸€ä¸ªç±»å‹ä¸ºdoubleçš„å€¼ 

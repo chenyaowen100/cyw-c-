@@ -1,15 +1,15 @@
-#include "stdio.h"
-int main()
-{//³õÊ¼»¯
-int price=0;
-int bill=0;
-//¶ÁÈë½ğ¶îºÍÆ±Ãæ
-printf("ÇëÊäÈë½ğ¶î");
-scanf("%d",&price);
-printf("ÇëÊäÈëÆ±Ãæ");
-scanf("%d",&bill);
-//¼ÆËãÕÒÁã
-if(bill>=price){printf("Ó¦¸ÃÕÒÄú%d",bill-price);} 
-else{printf("ÄãµÄÇ®²»¹»");}
-return 0;
-}
+#include "stdio.h"
+int main()
+{//åˆå§‹åŒ–
+int price=0;
+int bill=0;
+//è¯»å…¥é‡‘é¢å’Œç¥¨é¢
+printf("è¯·è¾“å…¥é‡‘é¢");
+scanf("%d",&price);
+printf("è¯·è¾“å…¥ç¥¨é¢");
+scanf("%d",&bill);
+//è®¡ç®—æ‰¾é›¶
+if(bill>=price){printf("åº”è¯¥æ‰¾æ‚¨%d",bill-price);} 
+else{printf("ä½ çš„é’±ä¸å¤Ÿ");}
+return 0;
+}

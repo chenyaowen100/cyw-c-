@@ -1,46 +1,46 @@
-#include"stdio.h"
-int main(){}
-/*ÀıÈç£º   typedef int length;ÕâÑù»áÊ¹µÃlength³ÉÎªintÀàĞÍµÄ±ğÃû
-ËùÒÔ´úÂë¾Í¿ÉÒÔĞ´³Élength a,b,c;
-.          ÓÖ»òÕßÊÇlength numbers[10]£» 
-
-Èç¹ûÓÃ½á¹¹ÌåÀ´¾ÙÀıÄØ 
-¾ÍÊÇÔ­À´ÊÇ							struct point{
-.											int x;
-.											int y;
-.											}; 
-È»ºóºóÃæÒªÓÃµ½Õâ¸ö½á¹¹ÌåµÄÊ±ºò¾ÍÒªĞ´	struct point B={0,0};
-¸Ğ¾õ·Ç³£Ö®·±Ëö°¡
-ÄÇÎÒÃÇ¾Í¿ÉÒÔ¸Ä³É				typedef struct point{
-.											int x;
-.											int y;
-.											}A;
-ÕâÊ±ºòAÏàµ±ÓÚstruct point£¬¿ÉÒÔÖ±½ÓĞ´  A  B={0,0}	
-.								typedef struct {        ÉõÖÁÎÒÃÇ¿ÉÒÔ²»ÒªÕâ¸öpoint°¡ 
-.											int x;
-.											int y;
-.											}A;
-.					  				   A  B={0,0}			
-
- 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-*/ 
+#include"stdio.h"
+int main(){}
+/*ä¾‹å¦‚ï¼š   typedef int length;è¿™æ ·ä¼šä½¿å¾—lengthæˆä¸ºintç±»å‹çš„åˆ«å
+æ‰€ä»¥ä»£ç å°±å¯ä»¥å†™æˆlength a,b,c;
+.          åˆæˆ–è€…æ˜¯length numbers[10]ï¼› 
+
+å¦‚æœç”¨ç»“æ„ä½“æ¥ä¸¾ä¾‹å‘¢ 
+å°±æ˜¯åŸæ¥æ˜¯							struct point{
+.											int x;
+.											int y;
+.											}; 
+ç„¶ååé¢è¦ç”¨åˆ°è¿™ä¸ªç»“æ„ä½“çš„æ—¶å€™å°±è¦å†™	struct point B={0,0};
+æ„Ÿè§‰éå¸¸ä¹‹ç¹çå•Š
+é‚£æˆ‘ä»¬å°±å¯ä»¥æ”¹æˆ				typedef struct point{
+.											int x;
+.											int y;
+.											}A;
+è¿™æ—¶å€™Aç›¸å½“äºstruct pointï¼Œå¯ä»¥ç›´æ¥å†™  A  B={0,0}	
+.								typedef struct {        ç”šè‡³æˆ‘ä»¬å¯ä»¥ä¸è¦è¿™ä¸ªpointå•Š 
+.											int x;
+.											int y;
+.											}A;
+.					  				   A  B={0,0}			
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+*/ 

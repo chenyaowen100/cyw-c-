@@ -1,20 +1,20 @@
-#include"stdio.h"
-#include"string.h"
-size_t mylen(const char*s)//Õâ¸öº¯ÊıÊÇº¯ÊıstrlenµÄ¹¦ÄÜÑİÊ¾ 
-{
-	int idx=0;//ÔÚÕâ¸öº¯ÊıÀïÃæ´«½øÀ´µÄÊÇÊı×éµÄÊ×µØÖ·£¬ËùÒÔ²»ÄÜÓÃsizeofÅĞ¶Ï³¤¶È 
-	while(s[idx]!='\0'){
-		idx++;
-	}
-	return idx; 
-}
-
-int main()
-{
-	char line[]="hello";
-	printf("strlen=%lu\n",mylen(line));//ÕâÀïµÄmylenÏàµ±ÓÚº¯Êıstrlen 
-	printf("sizeof=%lu",sizeof(line));//strlenµÄ×÷ÓÃÊÇËã×Ö·û´®³¤¶È£¬²»°üÀ¨×îºóµÄ0 
-	
-	return 0; 
-}
-//strlen£¨string length£©ÊÇ×Ö·û´®³¤¶ÈµÄËõĞ´ 
+#include"stdio.h"
+#include"string.h"
+size_t mylen(const char*s)//è¿™ä¸ªå‡½æ•°æ˜¯å‡½æ•°strlençš„åŠŸèƒ½æ¼”ç¤º 
+{
+	int idx=0;//åœ¨è¿™ä¸ªå‡½æ•°é‡Œé¢ä¼ è¿›æ¥çš„æ˜¯æ•°ç»„çš„é¦–åœ°å€ï¼Œæ‰€ä»¥ä¸èƒ½ç”¨sizeofåˆ¤æ–­é•¿åº¦ 
+	while(s[idx]!='\0'){
+		idx++;
+	}
+	return idx; 
+}
+
+int main()
+{
+	char line[]="hello";
+	printf("strlen=%lu\n",mylen(line));//è¿™é‡Œçš„mylenç›¸å½“äºå‡½æ•°strlen 
+	printf("sizeof=%lu",sizeof(line));//strlençš„ä½œç”¨æ˜¯ç®—å­—ç¬¦ä¸²é•¿åº¦ï¼Œä¸åŒ…æ‹¬æœ€åçš„0 
+	
+	return 0; 
+}
+//strlenï¼ˆstring lengthï¼‰æ˜¯å­—ç¬¦ä¸²é•¿åº¦çš„ç¼©å†™ 

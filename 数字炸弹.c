@@ -1,20 +1,20 @@
-#include "stdio.h"
-#include "stdlib.h"
-#include"time.h"
-int main()
-{srand(time(0));
-int number=rand()%100+1;
-int count=0;
-int a=0;
-printf("ÎÒÒÑ¾­ÏëºÃÁËÒ»¸ö1µ½100Ö®¼äµÄÊı¡£");
-do{printf("Çë²ÂÕâ¸ö1µ½100Ö®¼äµÄÊı:");
-scanf("%d",&a);
-count=count+1;
-if(a>number)
-{printf("Äã²ÂµÄÊı´óÁË¡£");}
- else {if(a<number){printf("Äã²ÂµÄÊıĞ¡ÁË¡£");}} 
-}while(a!=number);
-printf("Ì«ºÃÁË£¬ÄãÖ»ÓÃÁË%d´Î¾Í²Âµ½ÁË´ğ°¸",count);
-return 0; 
-} 
-
+#include "stdio.h"
+#include "stdlib.h"
+#include"time.h"
+int main()
+{srand(time(0));
+int number=rand()%100+1;
+int count=0;
+int a=0;
+printf("æˆ‘å·²ç»æƒ³å¥½äº†ä¸€ä¸ª1åˆ°100ä¹‹é—´çš„æ•°ã€‚");
+do{printf("è¯·çŒœè¿™ä¸ª1åˆ°100ä¹‹é—´çš„æ•°:");
+scanf("%d",&a);
+count=count+1;
+if(a>number)
+{printf("ä½ çŒœçš„æ•°å¤§äº†ã€‚");}
+ else {if(a<number){printf("ä½ çŒœçš„æ•°å°äº†ã€‚");}} 
+}while(a!=number);
+printf("å¤ªå¥½äº†ï¼Œä½ åªç”¨äº†%dæ¬¡å°±çŒœåˆ°äº†ç­”æ¡ˆ",count);
+return 0; 
+} 
+

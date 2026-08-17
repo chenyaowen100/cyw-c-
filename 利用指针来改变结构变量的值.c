@@ -1,30 +1,30 @@
-#include"stdio.h"
-struct point{
-	int x;
-	int y;
-}; 
-struct point*getstruct(struct point*);
-void output(struct point);
-void print(const struct point*p);
-int main(){
-	struct point A={0,0};
-	getstruct(&A);
-	output(A);
-	output(*getstruct(&A));
-	print(getstruct(&A));
-	*getstruct(&A)=(struct point){1,2};
-	return 0; 
-}
-struct point*getstruct(struct point*p){
-	scanf("%d",&p->x);
-	scanf("%d",&p->y);
-	printf("%d,%d\n",p->x,p->y);//p->x=10Ïàµ±ÓÚ£¨*p£©.x=10£»
-	//pÊÇÒ»¸öÖ¸Õë£¬p->xÆäÊµ¿ÉÒÔËµÊÇxµÄÖµ£¬²¢ÇÒÐÞ¸ÄËü¿ÉÒÔ¸Ä±äx 
-	return p; 
-} 
-void output(struct point p){
-	printf("%d,%d\n",p.x,p.y);
-}
-void print(const struct point*p){
-	printf("%d,%d",p->x,p->y);
-}
+#include"stdio.h"
+struct point{
+	int x;
+	int y;
+}; 
+struct point*getstruct(struct point*);
+void output(struct point);
+void print(const struct point*p);
+int main(){
+	struct point A={0,0};
+	getstruct(&A);
+	output(A);
+	output(*getstruct(&A));
+	print(getstruct(&A));
+	*getstruct(&A)=(struct point){1,2};
+	return 0; 
+}
+struct point*getstruct(struct point*p){
+	scanf("%d",&p->x);
+	scanf("%d",&p->y);
+	printf("%d,%d\n",p->x,p->y);//p->x=10ç›¸å½“äºŽï¼ˆ*pï¼‰.x=10ï¼›
+	//pæ˜¯ä¸€ä¸ªæŒ‡é’ˆï¼Œp->xå…¶å®žå¯ä»¥è¯´æ˜¯xçš„å€¼ï¼Œå¹¶ä¸”ä¿®æ”¹å®ƒå¯ä»¥æ”¹å˜x 
+	return p; 
+} 
+void output(struct point p){
+	printf("%d,%d\n",p.x,p.y);
+}
+void print(const struct point*p){
+	printf("%d,%d",p->x,p->y);
+}
